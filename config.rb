@@ -225,9 +225,7 @@ helpers do
   end
 
   def inherited_attributes_by_entity(entityId)
-    $dmwg_examples.attributes_by_entity[entityId]
-      .select { |i| i['entityId'] != entityId }
-      .each { |i| i.merge({'inherited_from' => data.flattened.Type[i['entityId']]})}
+    $dmwg_examples.attributes_by_entity[entityId].select { |i| i['entityId'] != entityId }.each { |i| i.merge({'inherited_from' => data.flattened.Type[i['entityId']]})}
   end
 
   def examples_by_type(type)
@@ -279,11 +277,11 @@ helpers do
 
 end
 
-set :css_dir, 'stylesheets'
+set :css_dir, '/static-resource/stylesheets/'
 
-set :js_dir, 'javascripts'
+set :js_dir, '/static-resource/javascripts/'
 
-set :images_dir, 'images'
+set :images_dir, '/static-resource/images/'
 
 # run get_examples.rb script to download latest snapshot.
 
