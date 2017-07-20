@@ -277,12 +277,6 @@ helpers do
 
 end
 
-# Enable Asset Hosts
-activate :asset_host
-
-set :asset_host do |asset|
-  '//nafisakhandaker.github.io/clingen-static-resources/'.to_s
-end
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'

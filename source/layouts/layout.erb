@@ -13,8 +13,10 @@
     </title>
 
 	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs/dt-1.10.13/fh-3.1.2/datatables.min.css"/>
-
-    <%= stylesheet_link_tag "bootstrap", "bootstrap-theme", "brand2", "jquery.jsonview" %>
+    <link href="https//nafisakhandaker.github.io/clingen-static-resources/stylesheets/bootstrap.css" rel="stylesheet" type = "text/css"/>
+    <link href="https//nafisakhandaker.github.io/clingen-static-resources/stylesheets/bootstrap-theme.css" rel="stylesheet" type = "text/css" />
+    <link href="https//nafisakhandaker.github.io/clingen-static-resources/stylesheets/brand2.css" rel="stylesheet" type = "text/css" />
+    <link href="https//nafisakhandaker.github.io/clingen-static-resources/stylesheets/jquery.jsonview.css" rel="stylesheet" type = "text/css" />
     <% (current_page.data.append_css || []).each do |cssfile| %>
       <%= stylesheet_link_tag cssfile %>
     <% end %>
