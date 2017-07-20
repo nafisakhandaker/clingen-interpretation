@@ -277,11 +277,15 @@ helpers do
 
 end
 
-set :css_dir, '/static-resource/stylesheets/'
+# Enable Asset Hosts
+activate :asset_host
 
-set :js_dir, '/static-resource/javascripts/'
-
-set :images_dir, '/static-resource/images/'
+set :asset_host do |asset|
+  '//nafisakhandaker.github.io/clingen-static-resources/'.to_s
+end
+set :css_dir, 'stylesheets'
+set :js_dir, 'javascripts'
+set :images_dir, 'images'
 
 # run get_examples.rb script to download latest snapshot.
 
